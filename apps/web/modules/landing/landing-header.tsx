@@ -25,7 +25,7 @@ export const LandingHeader: FC<LandingHeaderProps> = (props) => {
             height={24}
             className="h-6 w-6"
           />
-          <span className="font-bold text-xl">VeloKit</span>
+          <span className="font-bold text-xl">Astrarium</span>
         </div>
         <div className="flex items-center space-x-2">
           <ModeToggle />
@@ -34,19 +34,19 @@ export const LandingHeader: FC<LandingHeaderProps> = (props) => {
               href="#features"
               className="text-sm hover:text-primary transition-colors"
             >
-              Features
+              About Us
             </Link>
             <Link
               href="#tech-stack"
               className="text-sm hover:text-primary transition-colors"
             >
-              Tech Stack
+              Visit Your Pet
             </Link>
             <Link
               href="#docs"
               className="text-sm hover:text-primary transition-colors"
             >
-              Docs
+              Practice
             </Link>
             {isAuth ? (
               <Button variant="outline" size="sm">
