@@ -8,7 +8,7 @@ import { DevExperienceSection } from "./dev-experience-section";
 import { CtaSection } from "./cta-section";
 import { LandingFooter } from "./landing-footer";
 import { TechStackSection } from "./tech-stack-section";
-
+import { AboutSection } from "@/modules/landing/about-section";
 export type LandingHomeProps = LandingHeaderProps;
 
 export const LandingHome: FC<LandingHomeProps> = (props) => {
@@ -28,6 +28,8 @@ export const LandingHome: FC<LandingHomeProps> = (props) => {
 
       {/* Developer Experience Section */}
       <DevExperienceSection />
+
+      <AboutSection />
 
       {/* CTA Section */}
       <CtaSection />

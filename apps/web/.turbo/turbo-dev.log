@@ -1,0 +1,41 @@
+
+> web@0.5.14 dev /Users/neha/Desktop/test/astrarium/Astrarium/apps/web
+> next dev --turbopack
+
+ [33m[1m⚠[22m[39m Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/neha/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/neha/Desktop/test/astrarium/Astrarium/pnpm-lock.yaml
+
+   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.148.187.41:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Compiled middleware in 159ms
+ [32m[1m✓[22m[39m Ready in 1094ms
+ [31m[1m⨯[22m[39m Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:11)
+    at updateSession (Desktop/test/astrarium/Astrarium/apps/web/utils/supabase/middleware.ts:18:38)
+    at middleware (Desktop/test/astrarium/Astrarium/apps/web/middleware.ts:5:29)
+[0m [90m 16 |[39m   [36mconst[39m isPublicRoute [33m=[39m publicRoutes[33m.[39mincludes(path)[33m;[39m
+ [90m 17 |[39m
+[31m[1m>[22m[39m[90m 18 |[39m   [36mconst[39m supabase [33m=[39m createServerClient(
+ [90m    |[39m                                      [31m[1m^[22m[39m
+ [90m 19 |[39m     process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_SUPABASE_URL[39m[33m![39m[33m,[39m
+ [90m 20 |[39m     process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_SUPABASE_ANON_KEY[39m[33m![39m[33m,[39m
+ [90m 21 |[39m     {[0m
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 693ms
+ GET / [33m404[39m in 2ms
+ [37m[1m○[22m[39m Compiling /_not-found/page ...
+ GET /favicon.ico [32m200[39m in 1135ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 1551ms

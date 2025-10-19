@@ -1,0 +1,14 @@
+
+
+> @workspace/db@0.5.14 db:generate /Users/neha/Desktop/test/astrarium/Astrarium/packages/db
+> prisma generate
+
+[2mPrisma schema loaded from prisma/schema.prisma[22m
+
+
+✔ Generated [1mPrisma Client[22m (v6.16.3)[2m to ./generated/prisma[22m in 32ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+

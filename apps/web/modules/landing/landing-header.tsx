@@ -25,7 +25,15 @@ export const LandingHeader: FC<LandingHeaderProps> = (props) => {
             height={24}
             className="h-6 w-6"
           />
-          <span className="font-bold text-xl">Astrarium</span>
+          <span
+            className="font-bold text-xl  [font-family:var(--font-brand)]
+    text-xl md:text-xl font-extrabold tracking-wide
+    bg-gradient-to-tr from-indigo-500 via-sky-400 to-fuchsia-700
+    text-transparent bg-clip-text
+    drop-shadow-[0_0_18px_rgba(99,102,241,0.35)]"
+          >
+            Astrarium
+          </span>
         </div>
         <div className="flex items-center space-x-2">
           <ModeToggle />
@@ -53,7 +61,18 @@ export const LandingHeader: FC<LandingHeaderProps> = (props) => {
                 <Link href="/private">Dashboard</Link>
               </Button>
             ) : (
-              <Button size="sm">
+              <Button
+                size="sm"
+                className="
+              text-lg px-8
+              bg-gradient-to-tr from-indigo-500 via-sky-400 to-fuchsia-600
+              text-slate-900
+              shadow-lg shadow-indigo-500/20
+              hover:from-indigo-300 hover:via-sky-200 hover:to-fuchsia-200
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2
+              focus-visible:ring-indigo-300
+            "
+              >
                 <Link href="/login">Get Started</Link>
               </Button>
             )}

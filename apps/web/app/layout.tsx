@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-
 import { ThemeProvider } from "@/components/theme-provider";
 import { metadata } from "@/config/metadata";
 
